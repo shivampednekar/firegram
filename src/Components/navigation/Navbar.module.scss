@@ -1,0 +1,33 @@
+.Container {
+  width: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.NavWrapper {
+  max-width: 100rem;
+  margin: 0 auto;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+
+  @media only screen and (max-width: 37.5em) {
+    max-width: 30rem;
+  }
+}
+
+.NavTitle {
+  color: var(--primary-light);
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+
+  & span {
+    color: var(--primary-dark);
+    font-weight: 800;
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    font-size: 1.8rem;
+  }
+}

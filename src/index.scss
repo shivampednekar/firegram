@@ -1,0 +1,99 @@
+:root {
+  --primary: #22a45a;
+  --primary-dark: #01877e;
+  --primary-light: #7fccb9;
+  --color-text: #999;
+  --color-dark: #201f1d;
+  --color-white: #f7f6ee;
+  --color-red: #ff4849;
+  --shadow: rgba(0, 0, 0, 0.2);
+}
+
+// reset
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+form {
+  text-align: center;
+}
+
+input {
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+
+// base
+.Container {
+  width: 100%;
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 4rem;
+  z-index: 2;
+
+  // @media only screen and (min-width: 97em) {
+  //   max-width: 124rem;
+  //   padding: 0 5rem;
+  // }
+
+  @media only screen and (max-width: 37.5em) {
+    max-width: 90rem;
+    padding: 0 2rem;
+  }
+}
+
+.output {
+  color: var(--primary-light);
+  height: 6rem;
+  font-size: 0.8rem;
+}
+
+.error {
+  color: var(--color-red);
+  font-size: 1.3em;
+}
+
+::selection {
+  background-color: var(--primary-dark);
+  color: var(--color-white);
+}
+
+// CUSTOM SCROLLBAR
+body::-webkit-scrollbar {
+  background-color: #fff;
+  width: 16px;
+}
+body::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #babac0;
+  border-radius: 16px;
+  border: 4px solid #fff;
+}

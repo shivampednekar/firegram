@@ -1,0 +1,32 @@
+section {
+}
+
+.Wrapper {
+  position: relative;
+  padding: 2.4rem;
+  column-count: 3;
+  column-gap: 2rem;
+
+  // @media only screen and (min-width: 90em) {
+  //   column-count: 4;
+  // }
+
+  @media only screen and (max-width: 37.5em) {
+    column-count: 1;
+    padding: 0px;
+  }
+}
+
+.image_container {
+  display: inline-block;
+  margin-bottom: 1rem;
+  overflow: hidden;
+
+  @media only screen and (max-width: 37.5em) {
+    margin-bottom: 2rem;
+  }
+
+  img {
+    width: 100%;
+  }
+}

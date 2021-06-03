@@ -1,0 +1,30 @@
+form {
+  margin: 3rem auto 1rem;
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+.icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) ease-in-out; //improved animation
+
+  &:hover {
+    // background: rebeccapurple;
+    transform: scale(1.2);
+  }
+}
+
+.output {
+  color: var(--primary-light);
+  height: 6rem;
+  // font-size: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.error {
+  color: var(--color-red);
+  font-size: 1.3em;
+}
